@@ -1,8 +1,11 @@
+import { publish } from './scripts/pubsub';
+import './components/reload-banner'; 
+
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.addEventListener('controllerchange', () => {
       console.log('SW: controllerchange');
-      // publish('NEW_SW_CONTROLLING');
+      publish('NEW_SW_CONTROLLING');
     });
     navigator.serviceWorker.register('/service-worker.js').then((registration) => {
       // Registration was successful
