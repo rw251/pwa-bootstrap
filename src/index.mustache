@@ -3,8 +3,41 @@
 <head>
   <meta charset="utf-8">
   <title>{{ title }}</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+    }
+
+    body {
+      text-align: center;
+      font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;
+      font-size: 16px;
+      margin: 0;
+    }
+
+    .if-offline  {
+      display: none;
+      background: #dadada;
+      color: #000;
+      padding: 5px 10px;
+    }
+
+    .offline header .if-offline  {
+      display: block;
+    }
+  </style>
 </head>
 <body>
+  <header style="background-color: #3e51b5; color: white; font-weight: bold; cursor: pointer;width: 100%;">
+    <div style="max-width: 300px;margin: 0 auto;padding: 15px 0;">
+      <span class="heading">{{ title }} v{{ version }}</span>
+    </div>
+    <span class="if-offline">Offline mode. The site will still work, but there might be a newer version available.</span>
+  </header>
   <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=default"></script>
   <script src="/{{ scriptFile }}"></script>
 </body>
