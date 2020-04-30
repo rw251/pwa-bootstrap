@@ -1,0 +1,12 @@
+{
+  "name": "pwa-bootstrap",
+  "version": "0.0.1",
+  "description": "An attempt to build a Progressive Web App (PWA) boilerplate for quick starting applications.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["pwa", "boilerplate", "offline", "progressive web app"],
+  "author": "Richard Williams <1234richardwilliams@gmail.com>",
+  "license": "MIT"
+}
