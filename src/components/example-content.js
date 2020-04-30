@@ -4,7 +4,7 @@ const $greeting = document.getElementById('greeting');
 
 $helloButton.addEventListener('click', () => {
   const name = $nameInput.value || 'whoever you are. Enter a name for a personalised greeting';
-  const greeting = `Hello ${name}.`;
+  const greeting = `Hello, ${name}.`;
   $greeting.innerText = greeting;
 });
 
