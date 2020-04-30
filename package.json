@@ -4,9 +4,24 @@
   "description": "An attempt to build a Progressive Web App (PWA) boilerplate for quick starting applications.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c"
   },
-  "keywords": ["pwa", "boilerplate", "offline", "progressive web app"],
+  "keywords": [
+    "pwa",
+    "boilerplate",
+    "offline",
+    "progressive web app"
+  ],
   "author": "Richard Williams <1234richardwilliams@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "mustache": "^4.0.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.7.5",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-copy": "^3.3.0",
+    "rollup-plugin-terser": "^5.3.0"
+  }
 }
