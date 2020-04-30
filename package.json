@@ -1,6 +1,6 @@
 {
   "name": "pwa-bootstrap",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "An attempt to build a Progressive Web App (PWA) boilerplate for quick starting applications.",
   "main": "index.js",
   "scripts": {
