@@ -1,1 +1,1 @@
-document.style.background = 'blue';
+document.body.style.background = 'blue';
