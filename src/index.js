@@ -1,5 +1,6 @@
 import { publish } from './scripts/pubsub';
 import './components/reload-banner'; 
+import './components/example-content'; 
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
