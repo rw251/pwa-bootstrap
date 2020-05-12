@@ -6,6 +6,9 @@ $helloButton.addEventListener('click', () => {
   const name = $nameInput.value || 'whoever you are. Enter a name for a personalised greeting';
   const greeting = `Hello, ${name}.`;
   $greeting.innerText = greeting;
+
+  // quick hack to check for offline/online
+  fetch('manifest.json');
 });
 
 $nameInput.focus();
